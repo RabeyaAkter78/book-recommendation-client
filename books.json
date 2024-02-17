@@ -1,0 +1,29 @@
+[
+    {
+     
+        "book_image": "url_to_book_image_1.jpg",
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "genre": "Classic",
+        "publication_date": "April 10, 1925",
+        "description": "The story of the mysteriously wealthy Jay Gatsby and his love for the beautiful Daisy Buchanan, set during the Roaring Twenties."
+    },
+    {
+     
+        "book_image": "url_to_book_image_2.jpg",
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "genre": "Fiction",
+        "publication_date": "July 11, 1960",
+        "description": "A powerful exploration of racial injustice and moral growth in a small Southern town during the 1930s."
+    },
+    {
+      
+        "book_image": "url_to_book_image_3.jpg",
+        "title": "1984",
+        "author": "George Orwell",
+        "genre": "Dystopian",
+        "publication_date": "June 8, 1949",
+        "description": "A chilling portrayal of a totalitarian society where the government controls every aspect of its citizens' lives."
+    }
+]
