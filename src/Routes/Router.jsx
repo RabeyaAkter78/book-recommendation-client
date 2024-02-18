@@ -4,6 +4,8 @@ import {
 import Main from "../Components/Main/Main";
 import Home from "../Components/Pages/Home/Home";
 import Details from "../Components/Pages/AllBooks/Details";
+import Login from "../Components/Pages/Login/Login";
+import SignUp from "../Components/Pages/SignUp/SignUp";
 const router = createBrowserRouter([
     {
         path: "/",
@@ -25,6 +27,14 @@ const router = createBrowserRouter([
                     return response.json();
                 },
 
+            },
+            {
+                path: "/login",
+                element: <Login></Login>
+            },
+            {
+                path: "/signUp",
+                element: <SignUp></SignUp>
             }
         ]
     },

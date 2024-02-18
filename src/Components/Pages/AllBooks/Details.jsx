@@ -1,8 +1,18 @@
+import { useState } from "react";
+import Rating from "react-rating";
 import { useLoaderData } from "react-router-dom";
 
 const Details = () => {
-    const data = useLoaderData()
+    const data = useLoaderData();
     console.log(data);
+    const [rating, setRating] = useState(0);
+    
+    
+    
+
+    const handleRatingChange = (newRating) => {
+        setRating(newRating);
+    };
 
     return (
         <div className="card lg:card-side bg-base-100 shadow-xl">
@@ -14,7 +24,14 @@ const Details = () => {
                 <p>Genre: {data.genre}</p>
                 <p>Publication Date: {data.publication_date}</p>
                 <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Rating</button>
+                    <Rating
+                        rating={rating}
+                        changeRating={handleRatingChange}
+                        widgetRatedColors="gold"
+                        widgetDimensions="30px"
+                        widgetSpacings="5px"
+                    />
+                    <button className="btn btn-primary">Submit Rating</button>
                 </div>
             </div>
         </div>

@@ -1,21 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
 const Search = () => {
-    // const searchRef = useRef(null);
-    // const [search, setSearch] = useState('');
-
-    // useEffect(() => {
-    //     fetch(`http://localhost:5000/books?search=${search}`)
-    //         .then(res => res.json())
-    //         .then(data => { setSearch(data) })
-
-
-    // }, [search])
-    // const handleSearch = () => {
-    //     const searchTerm = searchRef.current.value;
-    //     console.log(searchTerm);
-    //     setSearch(searchTerm);
-    // }
+    
 
     const searchRef = useRef(null);
     const [searchResults, setSearchResults] = useState([]);
@@ -79,7 +65,7 @@ const Search = () => {
                         <p>No search results found.</p>
                     )
                 ) : (
-                    <p>Perform a search to see results.</p>
+                    <p className="text-center font-bold">Search here to see results.</p>
                 )}
             </div>
         </div>
